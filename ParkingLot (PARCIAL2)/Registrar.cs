@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ParkingLot__PARCIAL2_
 {
-    public partial class Form1 : Form
+    public partial class Registrar : Form
     {
-        public Form1()
+        public Registrar()
         {
             InitializeComponent();
-        }
-
-        private void BtnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
