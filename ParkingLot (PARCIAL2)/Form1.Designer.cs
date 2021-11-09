@@ -119,6 +119,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnRegistrar.TabIndex = 6;
             this.BtnRegistrar.Text = "REGISTRAR";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // BtnRetirar
             // 
@@ -131,6 +132,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnRetirar.TabIndex = 7;
             this.BtnRetirar.Text = "RETIRAR";
             this.BtnRetirar.UseVisualStyleBackColor = false;
+            this.BtnRetirar.Click += new System.EventHandler(this.BtnRetirar_Click);
             // 
             // BtnRegistros
             // 
@@ -143,6 +145,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnRegistros.TabIndex = 8;
             this.BtnRegistros.Text = "REGISTROS";
             this.BtnRegistros.UseVisualStyleBackColor = false;
+            this.BtnRegistros.Click += new System.EventHandler(this.BtnRegistros_Click);
             // 
             // BtnCerrar
             // 

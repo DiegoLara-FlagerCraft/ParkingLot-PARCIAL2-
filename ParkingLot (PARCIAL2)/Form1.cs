@@ -21,5 +21,23 @@ namespace ParkingLot__PARCIAL2_
         {
             this.Close();
         }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            Registrar r = new Registrar();
+            r.Show();
+        }
+
+        private void BtnRetirar_Click(object sender, EventArgs e)
+        {
+            Retirar re = new Retirar();
+            re.Show();
+        }
+
+        private void BtnRegistros_Click(object sender, EventArgs e)
+        {
+            Registros reg = new Registros();
+            reg.Show();
+        }
     }
 }

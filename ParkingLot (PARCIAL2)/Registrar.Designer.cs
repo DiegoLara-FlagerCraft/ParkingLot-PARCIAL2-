@@ -265,6 +265,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnBorrarDatos.TabIndex = 24;
             this.BtnBorrarDatos.Text = "BORRAR DATOS";
             this.BtnBorrarDatos.UseVisualStyleBackColor = false;
+            this.BtnBorrarDatos.Click += new System.EventHandler(this.BtnBorrarDatos_Click);
             // 
             // BtnVolver
             // 
@@ -277,6 +278,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnVolver.TabIndex = 25;
             this.BtnVolver.Text = "VOLVER";
             this.BtnVolver.UseVisualStyleBackColor = false;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
             // LblRegistrarC
             // 
