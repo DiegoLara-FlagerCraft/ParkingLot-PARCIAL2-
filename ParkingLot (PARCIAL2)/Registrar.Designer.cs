@@ -253,6 +253,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnRegistrarV.TabIndex = 23;
             this.BtnRegistrarV.Text = "REGISTRAR VEHICULO";
             this.BtnRegistrarV.UseVisualStyleBackColor = false;
+            this.BtnRegistrarV.Click += new System.EventHandler(this.BtnRegistrarV_Click);
             // 
             // BtnBorrarDatos
             // 

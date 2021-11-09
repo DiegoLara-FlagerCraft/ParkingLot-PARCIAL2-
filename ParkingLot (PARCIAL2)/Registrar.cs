@@ -28,5 +28,18 @@ namespace ParkingLot__PARCIAL2_
             TxtBoxMarcaV.Clear();
             TxtBoxNumI.Clear();
         }
+
+        private void BtnRegistrarV_Click(object sender, EventArgs e)
+        {
+            Vehiculo v = new Vehiculo();
+            Conductor c = new Conductor();
+            v.Tipo = ComBoxTipoV.Text;
+            v.Placa = TxtBoxPlacaV.Text;
+            v.Marca = TxtBoxMarcaV.Text;
+
+            c.Identidicacion = TxtBoxNumI.Text;
+            c.Sexo = ComBoxSexo.Text;
+            c.Afiliado = ComBoxAfiliacion.Text;
+        }
     }
 }
