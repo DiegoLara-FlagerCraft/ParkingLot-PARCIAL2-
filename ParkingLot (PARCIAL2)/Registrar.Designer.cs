@@ -29,6 +29,7 @@ namespace ParkingLot__PARCIAL2_
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registrar));
             this.PicBoxMarco5 = new System.Windows.Forms.PictureBox();
             this.PicBoxMarco6 = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,6 @@ namespace ParkingLot__PARCIAL2_
             this.ComBoxTipoV = new System.Windows.Forms.ComboBox();
             this.LblPlacaV = new System.Windows.Forms.Label();
             this.TxtBoxPlacaV = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.LblMarcaV = new System.Windows.Forms.Label();
             this.TxtBoxMarcaV = new System.Windows.Forms.TextBox();
             this.LblNumeroI = new System.Windows.Forms.Label();
@@ -52,6 +52,12 @@ namespace ParkingLot__PARCIAL2_
             this.BtnBorrarDatos = new System.Windows.Forms.Button();
             this.BtnVolver = new System.Windows.Forms.Button();
             this.LblRegistrarC = new System.Windows.Forms.Label();
+            this.LblNombreC = new System.Windows.Forms.Label();
+            this.TxtBoxNombreC = new System.Windows.Forms.TextBox();
+            this.LblHora = new System.Windows.Forms.Label();
+            this.LblFecha = new System.Windows.Forms.Label();
+            this.HoraFecha = new System.Windows.Forms.Timer(this.components);
+            this.RichTxtBoxRegistros = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco7)).BeginInit();
@@ -99,7 +105,7 @@ namespace ParkingLot__PARCIAL2_
             this.LblRegistrarV.AutoSize = true;
             this.LblRegistrarV.BackColor = System.Drawing.Color.Transparent;
             this.LblRegistrarV.Font = new System.Drawing.Font("Unna", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRegistrarV.Location = new System.Drawing.Point(202, 26);
+            this.LblRegistrarV.Location = new System.Drawing.Point(23, 26);
             this.LblRegistrarV.Name = "LblRegistrarV";
             this.LblRegistrarV.Size = new System.Drawing.Size(501, 62);
             this.LblRegistrarV.TabIndex = 9;
@@ -149,14 +155,6 @@ namespace ParkingLot__PARCIAL2_
             this.TxtBoxPlacaV.Size = new System.Drawing.Size(222, 20);
             this.TxtBoxPlacaV.TabIndex = 13;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(21, 23);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(166, 20);
-            this.dateTimePicker1.TabIndex = 14;
-            this.dateTimePicker1.Visible = false;
-            // 
             // LblMarcaV
             // 
             this.LblMarcaV.AutoSize = true;
@@ -181,7 +179,7 @@ namespace ParkingLot__PARCIAL2_
             this.LblNumeroI.AutoSize = true;
             this.LblNumeroI.BackColor = System.Drawing.Color.Transparent;
             this.LblNumeroI.Font = new System.Drawing.Font("Unna", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNumeroI.Location = new System.Drawing.Point(29, 294);
+            this.LblNumeroI.Location = new System.Drawing.Point(29, 342);
             this.LblNumeroI.Name = "LblNumeroI";
             this.LblNumeroI.Size = new System.Drawing.Size(286, 27);
             this.LblNumeroI.TabIndex = 17;
@@ -190,7 +188,7 @@ namespace ParkingLot__PARCIAL2_
             // 
             // TxtBoxNumI
             // 
-            this.TxtBoxNumI.Location = new System.Drawing.Point(326, 296);
+            this.TxtBoxNumI.Location = new System.Drawing.Point(321, 343);
             this.TxtBoxNumI.Name = "TxtBoxNumI";
             this.TxtBoxNumI.Size = new System.Drawing.Size(222, 20);
             this.TxtBoxNumI.TabIndex = 18;
@@ -200,7 +198,7 @@ namespace ParkingLot__PARCIAL2_
             this.LblSexo.AutoSize = true;
             this.LblSexo.BackColor = System.Drawing.Color.Transparent;
             this.LblSexo.Font = new System.Drawing.Font("Unna", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSexo.Location = new System.Drawing.Point(580, 292);
+            this.LblSexo.Location = new System.Drawing.Point(517, 299);
             this.LblSexo.Name = "LblSexo";
             this.LblSexo.Size = new System.Drawing.Size(60, 27);
             this.LblSexo.TabIndex = 19;
@@ -214,7 +212,7 @@ namespace ParkingLot__PARCIAL2_
             "MASCULINO",
             "FEMENINO",
             "OTRO"});
-            this.ComBoxSexo.Location = new System.Drawing.Point(643, 295);
+            this.ComBoxSexo.Location = new System.Drawing.Point(583, 302);
             this.ComBoxSexo.Name = "ComBoxSexo";
             this.ComBoxSexo.Size = new System.Drawing.Size(222, 21);
             this.ComBoxSexo.TabIndex = 20;
@@ -224,7 +222,7 @@ namespace ParkingLot__PARCIAL2_
             this.LblAfiliacion.AutoSize = true;
             this.LblAfiliacion.BackColor = System.Drawing.Color.Transparent;
             this.LblAfiliacion.Font = new System.Drawing.Font("Unna", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAfiliacion.Location = new System.Drawing.Point(29, 344);
+            this.LblAfiliacion.Location = new System.Drawing.Point(578, 336);
             this.LblAfiliacion.Name = "LblAfiliacion";
             this.LblAfiliacion.Size = new System.Drawing.Size(121, 27);
             this.LblAfiliacion.TabIndex = 21;
@@ -237,9 +235,9 @@ namespace ParkingLot__PARCIAL2_
             this.ComBoxAfiliacion.Items.AddRange(new object[] {
             "SI",
             "NO"});
-            this.ComBoxAfiliacion.Location = new System.Drawing.Point(154, 346);
+            this.ComBoxAfiliacion.Location = new System.Drawing.Point(705, 336);
             this.ComBoxAfiliacion.Name = "ComBoxAfiliacion";
-            this.ComBoxAfiliacion.Size = new System.Drawing.Size(222, 21);
+            this.ComBoxAfiliacion.Size = new System.Drawing.Size(160, 21);
             this.ComBoxAfiliacion.TabIndex = 22;
             // 
             // BtnRegistrarV
@@ -286,12 +284,69 @@ namespace ParkingLot__PARCIAL2_
             this.LblRegistrarC.AutoSize = true;
             this.LblRegistrarC.BackColor = System.Drawing.Color.Transparent;
             this.LblRegistrarC.Font = new System.Drawing.Font("Unna", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRegistrarC.Location = new System.Drawing.Point(222, 213);
+            this.LblRegistrarC.Location = new System.Drawing.Point(23, 210);
             this.LblRegistrarC.Name = "LblRegistrarC";
             this.LblRegistrarC.Size = new System.Drawing.Size(459, 62);
             this.LblRegistrarC.TabIndex = 26;
             this.LblRegistrarC.Text = "REGISTRAR CLIENTE";
             this.LblRegistrarC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblNombreC
+            // 
+            this.LblNombreC.AutoSize = true;
+            this.LblNombreC.BackColor = System.Drawing.Color.Transparent;
+            this.LblNombreC.Font = new System.Drawing.Font("Unna", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombreC.Location = new System.Drawing.Point(29, 299);
+            this.LblNombreC.Name = "LblNombreC";
+            this.LblNombreC.Size = new System.Drawing.Size(259, 27);
+            this.LblNombreC.TabIndex = 27;
+            this.LblNombreC.Text = "NOMBRE DEL CONDUCTOR";
+            this.LblNombreC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtBoxNombreC
+            // 
+            this.TxtBoxNombreC.Location = new System.Drawing.Point(289, 303);
+            this.TxtBoxNombreC.Name = "TxtBoxNombreC";
+            this.TxtBoxNombreC.Size = new System.Drawing.Size(222, 20);
+            this.TxtBoxNombreC.TabIndex = 28;
+            // 
+            // LblHora
+            // 
+            this.LblHora.AutoSize = true;
+            this.LblHora.BackColor = System.Drawing.Color.Transparent;
+            this.LblHora.Font = new System.Drawing.Font("Unna", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHora.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.LblHora.Location = new System.Drawing.Point(543, 26);
+            this.LblHora.Name = "LblHora";
+            this.LblHora.Size = new System.Drawing.Size(63, 27);
+            this.LblHora.TabIndex = 29;
+            this.LblHora.Text = "label1";
+            // 
+            // LblFecha
+            // 
+            this.LblFecha.AutoSize = true;
+            this.LblFecha.BackColor = System.Drawing.Color.Transparent;
+            this.LblFecha.Font = new System.Drawing.Font("Unna", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFecha.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.LblFecha.Location = new System.Drawing.Point(543, 61);
+            this.LblFecha.Name = "LblFecha";
+            this.LblFecha.Size = new System.Drawing.Size(63, 27);
+            this.LblFecha.TabIndex = 30;
+            this.LblFecha.Text = "label1";
+            // 
+            // HoraFecha
+            // 
+            this.HoraFecha.Enabled = true;
+            this.HoraFecha.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // RichTxtBoxRegistros
+            // 
+            this.RichTxtBoxRegistros.Location = new System.Drawing.Point(779, 558);
+            this.RichTxtBoxRegistros.Name = "RichTxtBoxRegistros";
+            this.RichTxtBoxRegistros.Size = new System.Drawing.Size(100, 27);
+            this.RichTxtBoxRegistros.TabIndex = 31;
+            this.RichTxtBoxRegistros.Text = "";
+            this.RichTxtBoxRegistros.Visible = false;
             // 
             // Registrar
             // 
@@ -299,6 +354,11 @@ namespace ParkingLot__PARCIAL2_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 623);
+            this.Controls.Add(this.RichTxtBoxRegistros);
+            this.Controls.Add(this.LblFecha);
+            this.Controls.Add(this.LblHora);
+            this.Controls.Add(this.TxtBoxNombreC);
+            this.Controls.Add(this.LblNombreC);
             this.Controls.Add(this.LblRegistrarC);
             this.Controls.Add(this.BtnVolver);
             this.Controls.Add(this.BtnBorrarDatos);
@@ -311,7 +371,6 @@ namespace ParkingLot__PARCIAL2_
             this.Controls.Add(this.LblNumeroI);
             this.Controls.Add(this.TxtBoxMarcaV);
             this.Controls.Add(this.LblMarcaV);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.TxtBoxPlacaV);
             this.Controls.Add(this.LblPlacaV);
             this.Controls.Add(this.ComBoxTipoV);
@@ -343,7 +402,6 @@ namespace ParkingLot__PARCIAL2_
         private System.Windows.Forms.ComboBox ComBoxTipoV;
         private System.Windows.Forms.Label LblPlacaV;
         private System.Windows.Forms.TextBox TxtBoxPlacaV;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label LblMarcaV;
         private System.Windows.Forms.TextBox TxtBoxMarcaV;
         private System.Windows.Forms.Label LblNumeroI;
@@ -356,5 +414,11 @@ namespace ParkingLot__PARCIAL2_
         private System.Windows.Forms.Button BtnBorrarDatos;
         private System.Windows.Forms.Button BtnVolver;
         private System.Windows.Forms.Label LblRegistrarC;
+        private System.Windows.Forms.Label LblNombreC;
+        private System.Windows.Forms.TextBox TxtBoxNombreC;
+        private System.Windows.Forms.Label LblHora;
+        private System.Windows.Forms.Label LblFecha;
+        private System.Windows.Forms.Timer HoraFecha;
+        private System.Windows.Forms.RichTextBox RichTxtBoxRegistros;
     }
 }

@@ -15,6 +15,7 @@ namespace ParkingLot__PARCIAL2_
         public Registros()
         {
             InitializeComponent();
+
         }
 
         private void BtnVolver2_Click(object sender, EventArgs e)
