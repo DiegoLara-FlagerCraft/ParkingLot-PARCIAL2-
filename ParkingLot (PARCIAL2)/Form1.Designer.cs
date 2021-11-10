@@ -37,9 +37,8 @@ namespace ParkingLot__PARCIAL2_
             this.PicBoxMarco4 = new System.Windows.Forms.PictureBox();
             this.TextBoxInfo = new System.Windows.Forms.TextBox();
             this.BtnRegistrar = new System.Windows.Forms.Button();
-            this.BtnRetirar = new System.Windows.Forms.Button();
-            this.BtnRegistros = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
+            this.BtnRegistros = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco3)).BeginInit();
@@ -117,35 +116,9 @@ namespace ParkingLot__PARCIAL2_
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(165, 55);
             this.BtnRegistrar.TabIndex = 6;
-            this.BtnRegistrar.Text = "REGISTRAR";
+            this.BtnRegistrar.Text = "INGRESAR";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
             this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
-            // 
-            // BtnRetirar
-            // 
-            this.BtnRetirar.BackColor = System.Drawing.Color.LemonChiffon;
-            this.BtnRetirar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRetirar.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRetirar.Location = new System.Drawing.Point(367, 350);
-            this.BtnRetirar.Name = "BtnRetirar";
-            this.BtnRetirar.Size = new System.Drawing.Size(165, 55);
-            this.BtnRetirar.TabIndex = 7;
-            this.BtnRetirar.Text = "RETIRAR";
-            this.BtnRetirar.UseVisualStyleBackColor = false;
-            this.BtnRetirar.Click += new System.EventHandler(this.BtnRetirar_Click);
-            // 
-            // BtnRegistros
-            // 
-            this.BtnRegistros.BackColor = System.Drawing.Color.LemonChiffon;
-            this.BtnRegistros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRegistros.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistros.Location = new System.Drawing.Point(367, 422);
-            this.BtnRegistros.Name = "BtnRegistros";
-            this.BtnRegistros.Size = new System.Drawing.Size(165, 55);
-            this.BtnRegistros.TabIndex = 8;
-            this.BtnRegistros.Text = "REGISTROS";
-            this.BtnRegistros.UseVisualStyleBackColor = false;
-            this.BtnRegistros.Click += new System.EventHandler(this.BtnRegistros_Click);
             // 
             // BtnCerrar
             // 
@@ -160,6 +133,19 @@ namespace ParkingLot__PARCIAL2_
             this.BtnCerrar.UseVisualStyleBackColor = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // BtnRegistros
+            // 
+            this.BtnRegistros.BackColor = System.Drawing.Color.LemonChiffon;
+            this.BtnRegistros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistros.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistros.Location = new System.Drawing.Point(367, 388);
+            this.BtnRegistros.Name = "BtnRegistros";
+            this.BtnRegistros.Size = new System.Drawing.Size(165, 55);
+            this.BtnRegistros.TabIndex = 8;
+            this.BtnRegistros.Text = "REGISTROS";
+            this.BtnRegistros.UseVisualStyleBackColor = false;
+            this.BtnRegistros.Click += new System.EventHandler(this.BtnRegistros_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,7 +154,6 @@ namespace ParkingLot__PARCIAL2_
             this.ClientSize = new System.Drawing.Size(907, 623);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.BtnRegistros);
-            this.Controls.Add(this.BtnRetirar);
             this.Controls.Add(this.BtnRegistrar);
             this.Controls.Add(this.TextBoxInfo);
             this.Controls.Add(this.PicBoxMarco4);
@@ -196,9 +181,8 @@ namespace ParkingLot__PARCIAL2_
         private System.Windows.Forms.PictureBox PicBoxMarco4;
         private System.Windows.Forms.TextBox TextBoxInfo;
         private System.Windows.Forms.Button BtnRegistrar;
-        private System.Windows.Forms.Button BtnRetirar;
-        private System.Windows.Forms.Button BtnRegistros;
         private System.Windows.Forms.Button BtnCerrar;
+        private System.Windows.Forms.Button BtnRegistros;
     }
 }
 

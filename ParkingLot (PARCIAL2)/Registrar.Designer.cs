@@ -58,6 +58,7 @@ namespace ParkingLot__PARCIAL2_
             this.LblFecha = new System.Windows.Forms.Label();
             this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.RichTxtBoxRegistros = new System.Windows.Forms.RichTextBox();
+            this.BtnRetirarV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxMarco7)).BeginInit();
@@ -245,7 +246,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnRegistrarV.BackColor = System.Drawing.Color.LemonChiffon;
             this.BtnRegistrarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrarV.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistrarV.Location = new System.Drawing.Point(133, 451);
+            this.BtnRegistrarV.Location = new System.Drawing.Point(133, 423);
             this.BtnRegistrarV.Name = "BtnRegistrarV";
             this.BtnRegistrarV.Size = new System.Drawing.Size(291, 55);
             this.BtnRegistrarV.TabIndex = 23;
@@ -258,7 +259,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnBorrarDatos.BackColor = System.Drawing.Color.LemonChiffon;
             this.BtnBorrarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrarDatos.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrarDatos.Location = new System.Drawing.Point(483, 451);
+            this.BtnBorrarDatos.Location = new System.Drawing.Point(456, 423);
             this.BtnBorrarDatos.Name = "BtnBorrarDatos";
             this.BtnBorrarDatos.Size = new System.Drawing.Size(291, 55);
             this.BtnBorrarDatos.TabIndex = 24;
@@ -271,7 +272,7 @@ namespace ParkingLot__PARCIAL2_
             this.BtnVolver.BackColor = System.Drawing.Color.LemonChiffon;
             this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVolver.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVolver.Location = new System.Drawing.Point(299, 521);
+            this.BtnVolver.Location = new System.Drawing.Point(456, 505);
             this.BtnVolver.Name = "BtnVolver";
             this.BtnVolver.Size = new System.Drawing.Size(291, 55);
             this.BtnVolver.TabIndex = 25;
@@ -348,12 +349,26 @@ namespace ParkingLot__PARCIAL2_
             this.RichTxtBoxRegistros.Text = "";
             this.RichTxtBoxRegistros.Visible = false;
             // 
+            // BtnRetirarV
+            // 
+            this.BtnRetirarV.BackColor = System.Drawing.Color.LemonChiffon;
+            this.BtnRetirarV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRetirarV.Font = new System.Drawing.Font("Unna", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRetirarV.Location = new System.Drawing.Point(133, 505);
+            this.BtnRetirarV.Name = "BtnRetirarV";
+            this.BtnRetirarV.Size = new System.Drawing.Size(291, 55);
+            this.BtnRetirarV.TabIndex = 32;
+            this.BtnRetirarV.Text = "RETIRAR VEHICULO";
+            this.BtnRetirarV.UseVisualStyleBackColor = false;
+            this.BtnRetirarV.Click += new System.EventHandler(this.BtnRetirarV_Click);
+            // 
             // Registrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(907, 623);
+            this.Controls.Add(this.BtnRetirarV);
             this.Controls.Add(this.RichTxtBoxRegistros);
             this.Controls.Add(this.LblFecha);
             this.Controls.Add(this.LblHora);
@@ -420,5 +435,6 @@ namespace ParkingLot__PARCIAL2_
         private System.Windows.Forms.Label LblFecha;
         private System.Windows.Forms.Timer HoraFecha;
         private System.Windows.Forms.RichTextBox RichTxtBoxRegistros;
+        private System.Windows.Forms.Button BtnRetirarV;
     }
 }
